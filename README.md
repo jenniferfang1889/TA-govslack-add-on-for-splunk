@@ -1,13 +1,13 @@
-# GovSlack Add-on for Splunk
+# Slack Add-on for Splunk
 
-> The **GovSlack Add-on for Splunk** uses the _Slack Audit Logs API_ to fetch GovSlack Enterprise Grid Audit Logs into Splunk.
+> The **Slack Add-on for Splunk** uses the _Slack Audit Logs API_ to fetch Slack Enterprise Grid Audit Logs into Splunk.
 
 ## Getting Started
 The Audit Logs API is for monitoring the audit events happening in an Enterprise Grid organization to ensure continued compliance, to safeguard against any inappropriate system access, and to allow you to audit suspicious behavior within your enterprise.
 
 The idea is to give Enterprise Grid organization owners the ability to query user actions in a workspace. With this API, you could:
 
-* Automatically feed GovSlack access data into an SIEM or other auditing tool
+* Automatically feed Slack access data into an SIEM or other auditing tool
 * Proactively monitor for potential security issues or malicious access attempts
 * Write custom apps to gain insight into how your organization uses Slack
 
