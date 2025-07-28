@@ -1,7 +1,7 @@
 {
     "schemaVersion": "2.0.0",
     "info": {
-        "title": "Slack Add-on for Splunk",
+        "title": "GovSlack Add-on for Splunk",
         "id": {
             "group": null,
             "name": "TA-slack-add-on-for-splunk",
@@ -15,7 +15,7 @@
             }
         ],
         "releaseDate": null,
-        "description": "Slack Add-on for Splunk",
+        "description": "GovSlack Add-on for Splunk",
         "classification": {
             "intendedAudience": "IT Professionals",
             "categories": [
