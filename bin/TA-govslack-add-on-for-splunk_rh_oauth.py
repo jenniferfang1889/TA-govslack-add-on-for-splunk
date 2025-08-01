@@ -47,8 +47,8 @@ class ta_slack_add_on_for_splunk_rh_oauth2_token(admin.MConfigHandler):
         log_level = conf_manager.get_log_level(
             logger=logger,
             session_key=session_key,
-            app_name="TA-slack-add-on-for-splunk",
-            conf_name="ta-slack-add-on-for-splunk_settings",
+            app_name="TA-govslack-add-on-for-splunk",
+            conf_name="ta-govslack-add-on-for-splunk_settings",
             log_stanza="logging",
             log_level_field="loglevel"
         )
@@ -156,8 +156,8 @@ class ta_slack_add_on_for_splunk_rh_oauth2_token(admin.MConfigHandler):
             proxy_config = conf_manager.get_proxy_dict(
                 logger=logger,
                 session_key=self.getSessionKey(),
-                app_name="TA-slack-add-on-for-splunk",
-                conf_name="ta-slack-add-on-for-splunk_settings",
+                app_name="TA-govslack-add-on-for-splunk",
+                conf_name="ta-govslack-add-on-for-splunk_settings",
             )
 
         # Handle invalid port case
