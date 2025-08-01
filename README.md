@@ -1,13 +1,13 @@
 # Slack Add-on for Splunk
 
-> The **Slack Add-on for Splunk** uses the _Slack Audit Logs API_ to fetch Slack Enterprise Grid Audit Logs into Splunk.
+> The **Slack Add-on for Splunk** uses the _GovSlack Audit Logs API_ to fetch Slack Enterprise Grid Audit Logs into Splunk.
 
 ## Getting Started
 The Audit Logs API is for monitoring the audit events happening in an Enterprise Grid organization to ensure continued compliance, to safeguard against any inappropriate system access, and to allow you to audit suspicious behavior within your enterprise.
 
 The idea is to give Enterprise Grid organization owners the ability to query user actions in a workspace. With this API, you could:
 
-* Automatically feed Slack access data into an SIEM or other auditing tool
+* Automatically feed GovSlack access data into an SIEM or other auditing tool
 * Proactively monitor for potential security issues or malicious access attempts
 * Write custom apps to gain insight into how your organization uses Slack
 
@@ -29,13 +29,13 @@ The **Slack Add-on for Splunk** supports OAuth2 Authentication. Therefore,  crea
 
 Please follow the following steps to create a dedicated Slack App for this Add-on. Further documentation can be found [here](https://api.slack-gov.com/admins/audit-logs#install).
 
-The Slack Add-on for Splunk supports two authentication ways
+The GovSlack Add-on for Splunk supports two authentication ways
 - **Basic Authentication**:  Requires the User OAuth Token from your Slack App.
 - **OAuth 2.o - Authorization Code Grant Type**:  Requires the Client Id & Client Secret from your Slack App.
 
 The process of creating a Slack App for both authentication types is nearly identical. Once the Slack App setup is complete, you will obtain the necessary credentials for authentication.
 
-1. [**Create a Slack app**](https://api.slack-gov.com/apps).
+1. [**Create a GovSlack app**](https://api.slack-gov.com/apps).
 2. **Enable Private distribution** - This step will allow installing the App to organization.
     - In the app's settings, select Manage Distribution from the left navigation. Under the section titled **Share Your App with Other Workspaces on Your Grid**.
     - Click `Enable Org-Wide App Installation > Opt into Org level Apps > Enable Org-Readiness`.
@@ -86,7 +86,7 @@ The configuration steps are common for `on-prem` and `cloud`. Please follow the 
     - **Redirect url**: The Redirect URI will auto show up.
     - **Endpoint**: Enter the Slack API Base Endpoint. The default one is slack.com.
 - Click the `Add` button.
-- After clicking the Add button, you will be redirected to the Slack Sign in page. Please Sign in with your **organization's Enterprise Grid Slack account**.
+- After clicking the Add button, you will be redirected to the GovSlack Sign in page. Please Sign in with your **organization's Enterprise Grid Slack account**.
 - After successfully signing in, you will be redirected to a page where you will be asked if you want to grant the add-on the required permissions. Please click on the Allow button.
 - The account will be successfully added and is ready to use.
 
