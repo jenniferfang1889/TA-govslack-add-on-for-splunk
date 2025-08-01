@@ -9,7 +9,7 @@ The idea is to give Enterprise Grid organization owners the ability to query use
 
 * Automatically feed GovSlack access data into an SIEM or other auditing tool
 * Proactively monitor for potential security issues or malicious access attempts
-* Write custom apps to gain insight into how your organization uses Slack
+* Write custom apps to gain insight into how your organization uses GovSlack
 
 Learn more about [Monitoring with the Audit Logs API](https://api.slack-gov.com/enterprise/audit-logs)
 
@@ -27,13 +27,13 @@ The **Slack Add-on for Splunk** supports OAuth2 Authentication. Therefore,  crea
  
 **Note**, as inquiring audit logs requests the `auditlogs:read` scope, the Slack App must be installed by the **Owner of an Enterprise Grid organization**. 
 
-Please follow the following steps to create a dedicated Slack App for this Add-on. Further documentation can be found [here](https://api.slack-gov.com/admins/audit-logs#install).
+Please follow the following steps to create a dedicated GovSlack App for this Add-on. Further documentation can be found [here](https://api.slack-gov.com/admins/audit-logs#install).
 
 The GovSlack Add-on for Splunk supports two authentication ways
-- **Basic Authentication**:  Requires the User OAuth Token from your Slack App.
-- **OAuth 2.o - Authorization Code Grant Type**:  Requires the Client Id & Client Secret from your Slack App.
+- **Basic Authentication**:  Requires the User OAuth Token from your GovSlack App.
+- **OAuth 2.o - Authorization Code Grant Type**:  Requires the Client Id & Client Secret from your GovSlack App.
 
-The process of creating a Slack App for both authentication types is nearly identical. Once the Slack App setup is complete, you will obtain the necessary credentials for authentication.
+The process of creating a Slack App for both authentication types is nearly identical. Once the GovSlack App setup is complete, you will obtain the necessary credentials for authentication.
 
 1. [**Create a GovSlack app**](https://api.slack-gov.com/apps).
 2. **Enable Private distribution** - This step will allow installing the App to organization.
@@ -84,7 +84,7 @@ The configuration steps are common for `on-prem` and `cloud`. Please follow the 
     - **Client ID**: Enter the Client ID that you obtained above in the Client ID textbox.
     - **Client Secret**: Enter the Client Secret that you obtained above in the Client Secret textbox.
     - **Redirect url**: The Redirect URI will auto show up.
-    - **Endpoint**: Enter the Slack API Base Endpoint. The default one is slack.com.
+    - **Endpoint**: Enter the GovSlack API Base Endpoint. The default one is slack-gov.com.
 - Click the `Add` button.
 - After clicking the Add button, you will be redirected to the GovSlack Sign in page. Please Sign in with your **organization's Enterprise Grid Slack account**.
 - After successfully signing in, you will be redirected to a page where you will be asked if you want to grant the add-on the required permissions. Please click on the Allow button.
