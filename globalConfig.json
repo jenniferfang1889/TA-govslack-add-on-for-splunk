@@ -266,10 +266,10 @@
         }
     },
     "meta": {
-        "name": "TA-slack-add-on-for-splunk",
-        "restRoot": "TA-slack-add-on-for-splunk",
+        "name": "TA-govslack-add-on-for-splunk",
+        "restRoot": "TA-govslack-add-on-for-splunk",
         "version": "3.0.0",
-        "displayName": "Slack Add-on for Splunk",
+        "displayName": "GovSlack Add-on for Splunk",
         "schemaVersion": "0.0.9",
         "supportedThemes": [
             "light",
