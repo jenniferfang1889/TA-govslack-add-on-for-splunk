@@ -18,7 +18,7 @@ import json
 
 
 log.Logs.set_context()
-logger = log.Logs().get_logger('ta_slack_add_on_for_splunk_rh_oauth2_token')
+logger = log.Logs().get_logger('ta_govslack_add_on_for_splunk_rh_oauth2_token')
 
 # Map for available proxy type
 _PROXY_TYPE_MAP = {
@@ -35,7 +35,7 @@ REST Endpoint of getting token by OAuth2 in Splunk Add-on UI Framework. T
 """
 
 
-class ta_slack_add_on_for_splunk_rh_oauth2_token(admin.MConfigHandler):
+class ta_govslack_add_on_for_splunk_rh_oauth2_token(admin.MConfigHandler):
 
     """
     This method checks which action is getting called and what parameters are required for the request.
@@ -212,4 +212,4 @@ class ta_slack_add_on_for_splunk_rh_oauth2_token(admin.MConfigHandler):
     """
 
 if __name__ == "__main__":
-    admin.init(ta_slack_add_on_for_splunk_rh_oauth2_token, admin.CONTEXT_APP_AND_USER)
+    admin.init(ta_govslack_add_on_for_splunk_rh_oauth2_token, admin.CONTEXT_APP_AND_USER)
