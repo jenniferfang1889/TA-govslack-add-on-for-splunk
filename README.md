@@ -1,4 +1,4 @@
-# Slack Add-on for Splunk
+# GovSlack Add-on for Splunk
 
 > The **GovSlack Add-on for Splunk** uses the _GovSlack Audit Logs API_ to fetch Slack Enterprise Grid Audit Logs into Splunk.
 
@@ -74,7 +74,7 @@ The configuration steps are common for `on-prem` and `cloud`. Please follow the 
     - **Client ID**: Enter the Client ID that you obtained above in the `Client ID` textbox.
     - **Client Secret**: Enter the Client Secret that you obtained above in the `Client Secret` textbox.
     - **Redirect url**: The Redirect URI will auto show up.
-    - **Endpoint**: Enter the Slack API Base Endpoint. The default one is `slack.com`.
+    - **Endpoint**: Enter the Slack API Base Endpoint. The default one is `govslack.com`.
 - Click the `Add` button. The account will be successfully added and is ready to use.
 
 #### OAuth 2.o - Authorization Code Grant Type
@@ -100,7 +100,7 @@ The configuration steps are common for `on-prem` and `cloud`. Please follow the 
   - **Start Time** (_required_): Enter the time from which to begin querying, in the format `yyyy-mm-dd hh:mm:ss`. The default has been set to `2025-01-01 00:00:00`.
   - **Enterprise Slack Account** (_required_): Select the Account configured above.
 4. Click on `Add` to save the input.
-5. To check for any logs or errors, navigate to the `Search` tab and enter the below search `index=_internal  source="*ta_slack_add_on_for_splunk_*.log"`.
+5. To check for any logs or errors, navigate to the `Search` tab and enter the below search `index=_internal  source="*ta_govslack_add_on_for_splunk_*.log"`.
 
 #### Pre-requisites, FAQ and Troubleshooting
 1. Initially, the sheer volume of audit logs could be large. 
